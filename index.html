@@ -1,90 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crowdreaming</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="crowddreaming.png">
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        <div class="header-right">
+          <a href="#">about</a>
+          <a href="#">ゆめ図鑑</a>
+          <a href="#">クラドリ朝活</a>
+          <a href="#">contact</a>
         </div>
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>新潟にゆかりのある夢を共有<br>応援し合い夢を加速させる。 </h1>
+        <p>にいがたの夢ポータルサイト</p>
+        <div class="btn-wrapper">
+          <a href="#" class="btn register">夢を登録する</a>
+          <p></p>
+          <a href="#" class="btn view"><span class="fa fa-facebook"></span>夢を見る</a>
+          <a href="#" class="btn continue"><span class="fa fa-twitter"></span>夢を継続したい</a>
+        </div>
+        <h3 class=pictureBook>夢図鑑</h3>
+        <!----スライドショーを入れる-->
+        <script type="text/javascript" src="slideShow1.js"></script>
+        <img id="mypic" data-src="pics/1.jpg" width="1080" height="207" class="lazyload">
+        <input type="button" value="開始" onclick="start()">
+
+        <h4 class=newArrivals>new arrivals </h4>
+        <!----スライドショーを入れる-->  
+        <script type="text/javascript" src="slideShow2.js"></script>
+        <img id="mypic" data-src="pics/1.jpg" width="1080" height="207" class="lazyload">
+        <input type="button" value="開始" onclick="start()">
+
       </div>
-      <span class="btn message">さっそく開発する</span>
     </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+
+ <div class="about-wrapper">
+      <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Main Features/Benefits</h2>
+        </div>
+        <div class="feautures">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <p><img src="check.png"></p>
+              <p>Share <br>夢を共有する</p>
+            </div>
+            <p class="text-contents">自分の夢を言語化することで頭の整理に繋がります</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <p><img src="check.png"></p>
+              <p>Continue<br>夢を継続する</p>
+            </div>
+            <p class="text-contents">夢に向かって努力する朝15分の習慣づくりをサポートします</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <p><img src="check.png"></p>
+              <p>Cheer<br>夢を応援する</p>
+            </div>
+            <p class="text-contents">コミュニティメンバー同士で応援・協力するできる環境つくりを目指しています</p>
+          </div>
+        </div>
+
+         
+        </div>
+        
+      </div>
     </div>
-  </footer>
-</body>
+
+   <div class="message-wrapper">
+       <div class="container">
+        <div class="heading"><h5>News</h5> </div>
+        <ul>
+          <li>2021/03/09 Crowdreamingサイトリニューアルしました！</li>
+          <li>2021/03/01 クラドリ朝活始動🐓</li>
+          <li>2020/12/01 にいがた学園無事終了しました</li>
+        </ul>
+        </div>
+      </div>
+
+
+    <footer>
+      <div class="container">
+        <p>SHARE YOUR DREAM AND <br> COOPERATE FOR OUR DREAMS</p>
+        <p>Crowdreaming</p>
+      </div>
+    </footer>
+  </body>
 </html>
